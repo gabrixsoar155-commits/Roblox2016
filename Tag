@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBLOX - Welcome to a New Generation of Gaming</title>
+    <style>
+        /* Estilo Clássico Roblox 2016 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #e3e3e3;
+            color: #333;
+        }
+
+        /* Barra de Navegação Superior Superior (Azul Escuro/Cinza) */
+        .roblox-header {
+            background-color: #0074BD;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Caixa de Login Centralizada */
+        .login-container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border: 1px solid #c3c3c3;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-top: 0;
+            color: #444;
+            font-size: 22px;
+        }
+
+        /* Inputs do Formulário */
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #a7a7a7;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Botão de Entrar Clássico Verde */
+        .btn-login {
+            width: 100%;
+            background-color: #02b757;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 0 #019446;
+        }
+
+        .btn-login:hover {
+            background-color: #02a14c;
+        }
+
+        /* Link de Cadastro */
+        .signup-footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-footer a {
+            color: #0074BD;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra do Topo de 2016 -->
+    <div class="roblox-header">
+        <div class="logo">ROBLOX</div>
+        <div>
+            <span style="font-size: 14px; margin-right: 15px;">Jogos</span>
+            <span style="font-size: 14px;">Catálogo</span>
+        </div>
+    </div>
+
+    <!-- Tela de Login -->
+    <div class="login-container">
+        <h2>Conectar ao Roblox (2016)</h2>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário/E-mail</label>
+                <input type="text" id="username" placeholder="Digite seu antigo nick..." required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite a senha..." required>
+            </div>
+            
+            <button type="submit" class="btn-login">Conectar</button>
+        </form>
+
+        <div class="signup-footer">
+            Não tem uma conta? <a href="#">Cadastre-se</a>
+        </div>
+    </div>
+
+    <script>
+        // Sistema básico para simular o login sem sumir com a página
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            alert('Simulação de Login efetuada com sucesso para: ' + user + '! Bem-vindo de volta a 2016.');
+            // Aqui você pode redirecionar para a página principal do seu site antigo
+        });
+    </script>
+
+</body>
+</html>
